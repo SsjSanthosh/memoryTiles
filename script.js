@@ -2,7 +2,7 @@ let tiles = document.querySelectorAll(".square");
 let flipped = 0;
 let flippedImages= [];
 let openImages = [];
-let h1 = document.querySelector("h1");
+let h1 = document.querySelector("#score");
 let score = 0;
 let container = document.querySelector(".container");
 const flipTile = (e)=>{
@@ -91,7 +91,7 @@ const setBoard = ()=>{
         let hero = document.createElement("img");
         hero.className="hide";
         square.className="square";
-        square.style.background="yellow"
+        
         square.addEventListener("click",flipTile)
         let index=indices.splice(Math.floor(Math.random()*indices.length), 1);
         hero.setAttribute('src',`img/${index}.png`);
