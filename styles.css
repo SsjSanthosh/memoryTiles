@@ -138,3 +138,40 @@ a{
         grid-auto-rows: minmax(10%,1fr);
     }
 }
+
+@media only screen and (max-width:500px){
+    body{
+        padding: 0;
+        margin: 0;
+        font-size: 0.4rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .gameDiv{
+        grid-template-columns: repeat(2,1fr);
+        height:80vh;
+        width:50vw;
+        grid-gap: 0.3em;
+        padding: 0.5em;
+        margin-left:2vw;
+        grid-auto-rows: minmax(10%,1fr);
+    }
+    .scoreDiv{
+        margin:0;
+        font-size:2em;
+        width:40vw;
+    }
+    .square > img{
+        width:100%;
+    }
+    .btnDiv > button{
+        width:20vw;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-right:80px;
+    }
+    .livesDiv{
+        margin-left:4vw;
+    }
+}
